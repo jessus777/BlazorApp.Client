@@ -1,0 +1,208 @@
+﻿@page "/create/customer"
+
+<PageTitle>Creación de Clientes</PageTitle>
+
+<br />
+<Card Title="Crear Cliente">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-warning" role="alert">
+                <i class="bi bi-exclamation-triangle-fill"></i> Los campos con el <stromg>* son campos obligatorios!</stromg>
+            </div>
+        </div>
+    </div>
+    <Accordion IdComponent="accordionExample">
+        <AccordionItem IdHeaderAccordion="headingOne" IdCollapse="collapseOne" ActiveCollapsed=""
+                       ExpandeArea="true" Title="Datos Personales" ShowCollapse="show"
+                       IdAccordionParent="accordionExample">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control is-invalid" id="nameInput" placeholder="Nombre" required>
+                        <label for="nameInput" class="fst-italic text-black-50">Nombre <strong>*</strong></label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control is-invalid" id="secondNameInput" placeholder="Segundo Nombre">
+                        <label for="secondNameInput" class="fst-italic text-black-50">Segundo Nombre</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control is-invalid" id="lastFirstNameInput" placeholder="Apellido Paterno" required>
+                        <label for="lastFirstNameInput" class="fst-italic text-black-50">Apellido Paterno<strong>*</strong></label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control is-invalid" id="lastSecondNameInput" placeholder="Apellido Materno" required>
+                        <label for="lastSecondNameInput" class="fst-italic text-black-50">Apellido Materno<strong>*</strong></label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="date" class="form-control is-invalid" id="dateAgeInput" placeholder="Fecha de Nacimiento" required>
+                        <label for="dateAgeInput" class="fst-italic text-black-50">Fecha de Nacimiento<strong>*</strong></label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="form-floating">
+                        <input type="email" class="form-control is-valid" id="emailInput" placeholder="name@example.com">
+                        <label for="emailInput" class="fst-italic text-black-50">Email address</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Cliente Activo</label>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Mascúlino
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Otro
+                        </label>
+                    </div>
+                    <div class="form-floating" hidden>
+                        <textarea class="form-control" placeholder="Otro" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Especifique</label>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="tel" class="form-control is-invalid" id="phoneInput" placeholder="Teléfono" required>
+                        <label for="phoneInput" class="fst-italic text-black-50">Teléfono<strong>*</strong></label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control is-invalid" id="RFCInput" placeholder="rfc" required>
+                        <label for="RFCInput" class="fst-italic text-black-50">RFC<strong>*</strong></label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Looks bad!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </AccordionItem>
+
+        <AccordionItem IdHeaderAccordion="headingTwo" IdCollapse="collapseTwo" ActiveCollapsed="collapsed"
+                       ExpandeArea="false" Title="Datos Domiciliarios" ShowCollapse=""
+                       IdAccordionParent="accordionExample">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <select class="form-select is-invalid state" id="floatingSelectState" aria-label="Floating label select example">
+                            <option selected disabled="disabled" value="0">Seleccione</option>
+                            <option value="1">Chilpancingo</option>
+                            <option value="2">Acapulco</option>
+                            <option value="3">Atoyac</option>
+                            <option value="4">Zihuatanejo</option>
+                            <option value="5">Iguala</option>
+                            <option value="6">Taxco</option>
+                        </select>
+                        <label for="floatingSelectState" class="fst-italic text-black-50">Seleccione un Estado</label>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <select class="form-select is-valid city" id="floatingSelectCyti" aria-label="Floating label select example">
+                            <option selected disabled="disabled" value="0">Seleccione</option>
+                            <option value="1">Chilpancingo</option>
+                            <option value="2">Acapulco</option>
+                            <option value="3">Atoyac</option>
+                            <option value="4">Zihuatanejo</option>
+                            <option value="5">Iguala</option>
+                            <option value="6">Taxco</option>
+                        </select>
+                        <label for="floatingSelectCyti" class="fst-italic text-black-50">Seleccione una Ciudad</label>
+                    </div>
+                </div>
+            </div>
+        </AccordionItem>
+    </Accordion>
+</Card>
+<style>
+        .accordion-button::after {
+            background-image: url("../css/imagenes/plus-circle-fill.svg");
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("../css/imagenes/dash-circle-fill.svg");
+            color: #0c63e4;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 58px;
+            padding-top: 1.625rem;
+            padding-bottom: 0.625rem;
+        }
+
+        .select2 {
+            width: 100% !important;
+        }
+        /*.is-invalid+.select2-container--bootstrap-5 .select2-selection{
+            background-image: url("../css/imagenes/dash-circle-fill.svg");
+        background-repeat: no-repeat;
+        background-position: right calc(0.375em + 0.1875rem) center;
+        }*/
+</style>

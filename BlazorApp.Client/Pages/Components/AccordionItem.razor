@@ -1,0 +1,12 @@
+﻿<div class="accordion-item">
+    <h2 class="accordion-header" id="@IdHeaderAccordion">
+        <button class="accordion-button @ActiveCollapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#@IdCollapse" aria-expanded="@ExpandeArea" aria-controls="@IdCollapse">
+            @Title
+        </button>
+    </h2>
+    <div id="@IdCollapse" class="accordion-collapse collapse @ShowCollapse" aria-labelledby="@IdHeaderAccordion" data-bs-parent="#@IdAccordionParent">
+        <div class="accordion-body">
+            @ChildContent
+        </div>
+    </div>
+</div>
