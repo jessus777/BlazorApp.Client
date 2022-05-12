@@ -31,3 +31,22 @@ async function asyncSelectCity() {
         }
     });
 }
+
+async function AlertNotify(title, text, icon) {
+    return new Promise(resolve => {
+        Swal.fire({
+            title,
+            text,
+            icon,
+            showCancelButton: true,
+            confirmButtonColor: '#0d6efd',
+            focusConfirm: false,
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'si, guardar!',
+            
+        }).then((result) => {
+            resolve(result.isConfirmed);
+        })
+    })
+    
+}

@@ -15,5 +15,10 @@ namespace BlazorApp.Client.Pages.Customer.Create
             }
         }
 
+        protected async Task SaveInformation()
+        {
+           var confirmed = await JSRuntime.InvokeAsync<bool>("AlertNotify","Confirmar","¿Seguro que deseas guardar la información?","question");
+        }
+
     }
 }
