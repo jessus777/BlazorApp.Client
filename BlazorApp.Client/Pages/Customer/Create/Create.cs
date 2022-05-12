@@ -12,6 +12,7 @@ namespace BlazorApp.Client.Pages.Customer.Create
             {
                 await JSRuntime.InvokeVoidAsync("asyncSelectState");
                 await JSRuntime.InvokeVoidAsync("asyncSelectCity");
+                await JSRuntime.InvokeVoidAsync("asyncPhoneMask");
             }
         }
 
